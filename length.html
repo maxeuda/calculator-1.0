@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>measuremend calculator v alpha</title>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Imperial to Metric Converter - Alpha Version</h1>
+            <h2>Length conversions</h2>
+        </header>
+
+        <nav>
+            <ul class="navbar">
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="current">
+                <a href="./length.html">Length Measurements</a>
+              </li>
+              <li>
+                <a href="./area.html">Area Measurements</a>
+              </li>
+              <li>
+                <a href="./volume.html">Volume Measurements</a>
+              </li>
+              <li>
+                <a href="./mass.html">Mass Measurements</a>
+              </li>
+              <li>
+                <a href="./temperature.html">Temperature Measurements</a>
+              </li>
+            </ul>
+        </nav>
+
+        <!--test input field, submit button, output-->
+        <div id="calcfield">
+        <label for="number">Enter a number and select a type of measurement:</label> 
+        <input type="list" id="number" name="number">
+        <select name="measures" id="measures">
+            <option value="millimeters">millimeters</option>
+            <option value="centimeters">centimeters</option>
+            <option value="meters">meters</option>
+            <option value="kilometers">kilometers</option>
+            <option value="inches">inches</option>
+            <option value="feet">feet</option>
+            <option value="yards">yards</option>
+            <option value="miles">miles</option>
+        </select>
+        <input type="submit" value="calculate" id="submit">
+        <div id="output"></div>
+    </div>
+
+        <!--JS file link-->
+        <script type="text/javascript" src="./main.js" defer></script>
+    </body>
+</html>

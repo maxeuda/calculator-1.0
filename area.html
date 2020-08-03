@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>measuremend calculator v alpha</title>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Imperial to Metric Converter - Alpha Version</h1>
+            <h2>Area conversions</h2>
+        </header>
+
+        <nav>
+            <ul class="navbar">
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./length.html">Length Measurements</a>
+              </li>
+              <li class="current">
+                <a href="./area.html">Area Measurements</a>
+              </li>
+              <li>
+                <a href="./volume.html">Volume Measurements</a>
+              </li>
+              <li>
+                <a href="./mass.html">Mass Measurements</a>
+              </li>
+              <li>
+                <a href="./temperature.html">Temperature Measurements</a>
+              </li>
+            </ul>
+        </nav>
+
+        <!--test input field, submit button, output-->
+        <div id="calcfield">
+            <label for="number">Enter a number and select a type of measurement:</label> 
+            <input type="list" id="number" name="number">
+            <select name="measures" id="measures">
+                <option value="square millimeters">square millimeters</option>
+                <option value="square centimeters">square centimeters</option>
+                <option value="square meters">square meters</option>
+                <option value="hectares">hectares</option>
+                <option value="square kilometers">square kilometers</option>
+                <option value="square inches">square inches</option>
+                <option value="square feet">square feet</option>
+                <option value="square yards">square yards</option>
+                <option value="acres">acres</option>
+                <option value="square miles">square miles</option>
+            </select>
+            <input type="submit" value="calculate" id="submit">
+            <div id="output"></div>
+        </div>
+
+        <!--JS file link-->
+        <script type="text/javascript" src="./main.js" defer></script>
+    </body>
+</html>
